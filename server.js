@@ -13,7 +13,7 @@ app.get(`/user`, (req, res) => {
     res.send(`User Page`)
 });
 
-app.listen(2000, () => {
+app.listen(PORT, () => {
     console.log(`Server Running`);
 })
 function logger(req, res, next) {

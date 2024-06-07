@@ -2,10 +2,11 @@ const express = require(`express`);
 const app = express();
 const PORT = 2000;
 
+app.set(`view engine`, `ejs`)
 app.use(logger);
 
 app.get(`/`, (req, res) => {
-    res.send(`Home Page`)
+    res.render(`index`)
 });
 
 app.get(`/user`, (req, res) => {
